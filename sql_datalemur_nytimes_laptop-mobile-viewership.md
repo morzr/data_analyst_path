@@ -1,4 +1,4 @@
-**Question ([link]https://datalemur.com/questions/laptop-mobile-viewership))**
+**Question ([link](https://datalemur.com/questions/laptop-mobile-viewership))**
 
 This is the same question as problem #3 in the SQL Chapter of [Ace the Data Science Interview](https://amzn.to/3kF79Fx)!
 Assume that you are given the table below containing information on viewership by device type (where the three types are laptop, tablet, and phone). Define “mobile” as the sum of tablet and phone viewership numbers. Write a query to compare the viewership on laptops versus mobile devices.
