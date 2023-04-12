@@ -1,8 +1,8 @@
 # My Data Analyst Path
 
-In this repository I've documented my journey to become a data analyst - the courses and written material I've used along the way to acquire the required knowledge problems, and the problems I've solved for practice.
+In this repository I've documented my journey to become a data analyst - the courses and written material I've used along the way to acquire the required knowledge, and the problems I've solved for practice.
 
-Each file in this repository contains one questio, with a link to the original question and my solution, as accepted by the platform:
+Each file in this repository contains one question, with a link to the original question and an accepted solution written by me:
 
 | Subject | Website | Details | File Pattern |
 | ------- | ------- | ------- | ------------ |
@@ -10,7 +10,7 @@ Each file in this repository contains one questio, with a link to the original q
 | SQL | hackerrank.com | Learning SQL, from basic to more advanced problems | sql\_hackerrank\_\* |
 | SQL | datalemur.com | Real-world problems from companies like Facebook, Microsoft, Amazon, etc. | sql\_datalemur\_\* |
 
-Aside from the problems I've solved, I've compiled a list of all the content I've used through the journey:
+In addition, I've compiled a list of all the content I've used through the journey:
 
 | Subject | Platform | Description |
 | ------- | -------- | ----------- |
