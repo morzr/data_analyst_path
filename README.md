@@ -10,7 +10,7 @@ Each file in this repository contains one question, with a link to the original 
 | SQL | datalemur.com | Real-world problems from companies like Facebook, Microsoft, Amazon, etc. | sql\_datalemur\_\* |
 | Python | checkio.org | Dozens of exercices in varying levels for programming in Python | python\_checkio\_\* |
 
-In addition, I've compiled a list of all the content I've used through the journey:
+In addition, I've compiled a list of all the content I've used throughout the journey:
 
 | Subject | Platform | Description |
 | ------- | -------- | ----------- |
