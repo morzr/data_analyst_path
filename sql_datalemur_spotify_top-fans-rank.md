@@ -67,35 +67,20 @@ Ed Sheeran's song appeared twice in the Top 10 list of global song rank while Dr
 **My Solution**:
 
 ```sql
-WITH top_artists
-AS ( 
--- Start of CTE
+WITH top_10_cte AS (
   SELECT 
-    artist_id,
-  	  DENSE_RANK() OVER (
-      ORDER BY song_count DESC
-  	  ) AS artist_rank
-  FROM ( 
--- Start of subquery 
-    SELECT 
-      songs.artist_id,
-      COUNT(songs.song_id) AS song_count
-    FROM songs
-  	JOIN global_song_rank
-      ON songs.song_id = global_song_rank.song_id
-  	WHERE global_song_rank.rank <= 10
-  	GROUP BY songs.artist_id
--- End of subquery
-  ) AS top_songs
-) 
--- End of CTE
+    artists.artist_name,
+    DENSE_RANK() OVER (
+      ORDER BY COUNT(songs.song_id) DESC) AS artist_rank
+  FROM artists
+  INNER JOIN songs
+    ON artists.artist_id = songs.artist_id
+  INNER JOIN global_song_rank AS ranking
+    ON songs.song_id = ranking.song_id
+  WHERE ranking.rank <= 10
+  GROUP BY artists.artist_name
+)
 
-SELECT 
-  artists.artist_name,
-  top_artists.artist_rank
-FROM top_artists
-JOIN artists
-  ON top_artists.artist_id = artists.artist_id
-WHERE  top_artists.artist_rank <= 5
-ORDER BY artist_rank, artist_name;
-```
+SELECT artist_name, artist_rank
+FROM top_10_cte
+WHERE artist_rank <= 5;
